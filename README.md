@@ -2,7 +2,6 @@
 
 ---
 ## User API
----
 
 ### Sign Up (i.e create user)
 
@@ -16,7 +15,6 @@
       - lastName: (string) last name of the new user
       - city: (string) city of the new user
       - country: (string) country of the new user
-
 
 - response: 200
     - content-type: `application/json`
@@ -180,9 +178,7 @@ $ curl -X DELETE -H "Content-Type:application/json" -b cookie.txt -c cookie.txt 
 $ curl -b cookie.txt -c cookie.txt https://mia-stove.herokuapp.com/api/current/
 ```
 
----
 ## Suggestion API
----
 
 ### Create
 
@@ -245,9 +241,9 @@ $ curl -b cookie.txt -c cookie.txt https://mia-stove.herokuapp.com/api/current/
 $ curl -b cookie.txt -c cookie.txt -k https://mia-stove.herokuapp.com/api/history/58d52ec0c85e2a2351f15836/0/
 ```
 
----
+
 ## Additional API Calls
----
+
 ### Current Location
 
 - description: sets the current location of the user for precise suggestion generation
