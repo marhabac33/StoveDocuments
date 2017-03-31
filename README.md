@@ -1,4 +1,5 @@
 # Stove: API Documentation
+
 ---
 ## User API
 ---
@@ -178,10 +179,9 @@ $ curl -X DELETE -H "Content-Type:application/json" -b cookie.txt -c cookie.txt 
 ```
 $ curl -b cookie.txt -c cookie.txt https://mia-stove.herokuapp.com/api/current/
 ```
+
 ---
-
 ## Suggestion API
-
 ---
 
 ### Create
