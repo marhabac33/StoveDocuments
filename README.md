@@ -127,7 +127,7 @@ $ curl -X POST -H "Content-Type:application/json" -d '{"email":"s@bigbang.com","
       - city: (string) **updated** city of the user
       - country: (string) **updated** country of the user
 - response 403
-    - body: "Forbidden"
+    - body: Forbidden
 - response 500
     - session end
 
