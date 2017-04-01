@@ -28,7 +28,7 @@
 - response 409
     - body: User with email :email already exists
 - response 500
-    - session end
+    - Request End
 
 ##### Terminal Command to Sign Up
 
@@ -60,7 +60,7 @@ $ curl -X POST -H "Content-Type:application/json" -d '{"email":"sheldon@bigbang.
 - response 401
   - body: Unauthorized
 - response 500
-  - session end
+  - Request End
 - response 400
   - body: Bad Request
 
@@ -94,7 +94,7 @@ $ curl -X POST -H "Content-Type:application/json" -d '{"email":"s@bigbang.com","
     - city: (string) city of the user
     - country: (string) country of the user
 - response 500
-  - session end
+  - Request End
 - response 400
   - body: Bad Request
 
@@ -110,11 +110,11 @@ $ curl -X POST -H "Content-Type:application/json" -d '{"email":"s@bigbang.com","
     - content-type: `application/json`
     - body: object
       - \_id: (string) the user id
-      - email: (string) new email of the new user
-      - firstName: (string) new first name of the new user
-      - lastName: (string) new last name of the new user
-      - city: (string) new city of the new user
-      - country: (string) country of the new user
+      - email: (string) **new** email of the new user
+      - firstName: (string) **new** first name of the new user
+      - lastName: (string) **new** last name of the new user
+      - city: (string) **new** city of the new user
+      - country: (string) **new** country of the new user
 
 
 - response: 200
@@ -129,7 +129,7 @@ $ curl -X POST -H "Content-Type:application/json" -d '{"email":"s@bigbang.com","
 - response 403
     - body: Forbidden
 - response 500
-    - session end
+    - Request End
 
 ##### Terminal Command to Sign Up
 
@@ -146,7 +146,7 @@ $ curl -X PUT -H "Content-Type:application/json" -d '{"email":"sheldon@bigbang.c
 - response: 200
     - session end
 - response 500
-    - session end
+    - Request End
 
 ##### Terminal Command to Sign Out
 
@@ -182,7 +182,7 @@ $ curl -b cookie.txt -c cookie.txt https://mia-stove.herokuapp.com/api/current/
 
 ### Create
 
-- description: create a suggestion for the user based on the infomtion provided in the body of the cal
+- description: create a suggestion based on the infomtion provided in the body of the cal
 - request: `POST /api/spin/`
 - content-type: `application/json`
 - body:
